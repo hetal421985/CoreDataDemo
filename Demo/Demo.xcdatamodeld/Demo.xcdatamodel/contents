@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HistoricalReading" representedClassName="HistoricalReading" syncable="YES" codeGenerationType="class">
+        <attribute name="consumtionCost" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OrderDetail" representedClassName="OrderDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Passport" representedClassName="Passport" syncable="YES">
+        <attribute name="expiryDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UserDetail" inverseName="passport" inverseEntity="UserDetail"/>
+    </entity>
+    <entity name="UserDetail" representedClassName="UserDetail" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="passport" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Passport" inverseName="user" inverseEntity="Passport"/>
+    </entity>
+    <elements>
+        <element name="HistoricalReading" positionX="-1222.85546875" positionY="-23.89453125" width="128" height="74"/>
+        <element name="OrderDetail" positionX="-1320.86328125" positionY="107.57421875" width="128" height="118"/>
+        <element name="Passport" positionX="-742.08203125" positionY="153.6015625" width="128" height="74"/>
+        <element name="UserDetail" positionX="-1020.07421875" positionY="52.3828125" width="128" height="89"/>
+    </elements>
+</model>
