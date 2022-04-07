@@ -24,14 +24,6 @@ class ReadingDetailsViewController: UIViewController {
     /// Historical Reading Detail TableView
     @IBOutlet weak var tblViewHistoricalReadingDetail: UITableView!
     
-    /// Stored Property
-    var length: Double = 0.0
-    
-    /// Compted Property
-    var area: Double {
-        return length * length
-    }
-    
     /// Local Varaible Historical Reading Data
     var arrOrderDetailData: [OrderDetailData] = []
     
