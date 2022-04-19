@@ -1,12 +1,12 @@
 #!/bin/sh
 set -eo pipefail
 
-gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.mobileprovision ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.gpg
+gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision  ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.gpg
 gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/Certificates.p12 ./.github/secrets/Certificates.p12.gpg
 
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 
-cp ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/SmartFlow_Vebuin_Development.mobileprovision.mobileprovision
+cp ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/SmartFlow_Vebuin_Development.mobileprovision
 
 
 security create-keychain -p "" build.keychain
