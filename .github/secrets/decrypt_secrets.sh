@@ -6,7 +6,7 @@ gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/
 
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 
-cp ./.github/secrets/match_AppStore_comtiagosantocalculatorIOS.mobileprovision.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/SmartFlow_Vebuin_Development.mobileprovision.mobileprovision
+cp ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/SmartFlow_Vebuin_Development.mobileprovision.mobileprovision
 
 
 security create-keychain -p "" build.keychain
