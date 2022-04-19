@@ -16,7 +16,6 @@ jobs:
         run: chmod +x .github/secrets/decrypt_secrets.sh 
              .github/scripts/archive_app.sh 
              .github/scripts/export_ipa.sh 
-             .github/scripts/publish_testflight.sh
       - name: Setup provisioning profile
         env:
           IOS_KEYS: ${{ secrets.IOS_KEYS }}
