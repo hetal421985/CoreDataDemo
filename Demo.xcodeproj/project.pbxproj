@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1363A1280EB629003B3519 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D1363A0280EB629003B3519 /* exportOptions.plist */; };
 		3D6D89C127ED94990009A417 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D89C027ED94990009A417 /* APIManager.swift */; };
 		3D6D89CD27ED951C0009A417 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D89C427ED951C0009A417 /* OrderViewModel.swift */; };
 		3D6D89CE27ED951C0009A417 /* OrderDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D89C627ED951C0009A417 /* OrderDetailData.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D1363A0280EB629003B3519 /* exportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = exportOptions.plist; path = Demo/exportOptions.plist; sourceTree = "<group>"; };
 		3D6D89C027ED94990009A417 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		3D6D89C427ED951C0009A417 /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		3D6D89C627ED951C0009A417 /* OrderDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailData.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		3DC09F0D27DF32F80062B0D8 = {
 			isa = PBXGroup;
 			children = (
+				3D1363A0280EB629003B3519 /* exportOptions.plist */,
 				3DC09F1827DF32F80062B0D8 /* Demo */,
 				3DC09F3227DF32FA0062B0D8 /* DemoTests */,
 				3DC09F3C27DF32FA0062B0D8 /* DemoUITests */,
@@ -388,6 +391,7 @@
 			files = (
 				3DC09F2927DF32FA0062B0D8 /* LaunchScreen.storyboard in Resources */,
 				3DC09F2627DF32FA0062B0D8 /* Assets.xcassets in Resources */,
+				3D1363A1280EB629003B3519 /* exportOptions.plist in Resources */,
 				3DC09F2127DF32F80062B0D8 /* Main.storyboard in Resources */,
 				3D6D89D127ED951C0009A417 /* OrderDetailTableViewCell.xib in Resources */,
 			);
