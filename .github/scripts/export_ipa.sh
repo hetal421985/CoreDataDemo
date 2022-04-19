@@ -4,7 +4,7 @@ set -eo pipefail
 
 xcodebuild  -archivePath $PWD/build/Demo.xcarchive \
             -exportOptionsPlist exportOptions.plist \
-             -exportPath "$XC_EXPORT_PATH"
+              -exportPath /Demo/DemoIPA.ipa \
             -allowProvisioningUpdates \
-            -exportArchive -archivePath "$XC_ARCHIVE_PATH"
+            -exportArchive \
            
