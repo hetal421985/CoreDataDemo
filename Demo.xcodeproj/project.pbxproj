@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D1363A8280ED16B003B3519 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D1363A7280ED16B003B3519 /* exportOptions.plist */; };
-		3D1363A9280ED296003B3519 /* exportOptions.plist in Sources */ = {isa = PBXBuildFile; fileRef = 3D1363A7280ED16B003B3519 /* exportOptions.plist */; };
 		3D6D89C127ED94990009A417 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D89C027ED94990009A417 /* APIManager.swift */; };
 		3D6D89CD27ED951C0009A417 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D89C427ED951C0009A417 /* OrderViewModel.swift */; };
 		3D6D89CE27ED951C0009A417 /* OrderDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D89C627ED951C0009A417 /* OrderDetailData.swift */; };
@@ -419,7 +418,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1363A9280ED296003B3519 /* exportOptions.plist in Sources */,
 				3DC09F1A27DF32F80062B0D8 /* AppDelegate.swift in Sources */,
 				3DF93C2727F448DC00CD5BFD /* UserDetail+CoreDataProperties.swift in Sources */,
 				3D6D89CD27ED951C0009A417 /* OrderViewModel.swift in Sources */,
