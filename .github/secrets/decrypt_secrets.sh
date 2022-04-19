@@ -1,8 +1,8 @@
 #!/bin/sh
 set -eo pipefail
 
-gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision  ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.gpg
-gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/Certificates.p12 ./.github/secrets/Certificates.p12.gpg
+gpg --quiet --batch --yes --decrypt --passphrase="4Hetal_Mehta" --output ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision  ./.github/secrets/SmartFlow_Vebuin_Development.mobileprovision.gpg
+gpg --quiet --batch --yes --decrypt --passphrase="4Hetal_Mehta" --output ./.github/secrets/Certificates.p12 ./.github/secrets/Certificates.p12.gpg
 
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 
