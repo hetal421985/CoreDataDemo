@@ -3,7 +3,7 @@
 set -eo pipefail
 
 xcodebuild -project Demo.xcodeproj \
-            -scheme Demo\ iOS \
+            -scheme Demo \
             -sdk iphoneos \
             -configuration AppStoreDistribution \
             -archivePath $PWD/build/Calculator.xcarchive \
