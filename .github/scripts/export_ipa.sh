@@ -4,7 +4,7 @@ set -eo pipefail
 
 xcodebuild  -archivePath DerivedData/Archive/Demo.xcarchive \
             -exportOptionsPlist exportOptions.plist \
-            -exportPath DerivedData/IPA \
+            -exportPath .github/Demo.ipa \
             -allowProvisioningUpdates \
             -exportArchive | xcpretty
            
