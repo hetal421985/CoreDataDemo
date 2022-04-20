@@ -22,4 +22,6 @@ jobs:
         run:  ./.github/secrets/decrypt_secrets.sh
       - name: Archiving project
         run: ./.github/scripts/archive_app.sh
+       - name: Exporting .ipa
+        run: ./.github/scripts/export_ipa.sh
      
