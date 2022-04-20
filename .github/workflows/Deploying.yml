@@ -24,4 +24,9 @@ jobs:
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
         run: ./.github/scripts/export_ipa.sh
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: Artifacts 
+          path: ./artifacts
      
