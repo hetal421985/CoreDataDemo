@@ -2,9 +2,9 @@
 
 set -eo pipefail
 
-xcodebuild  -archivePath $PWD/build/Demo.xcarchive \
+xcodebuild  -archivePath DerivedData/Archive/Demo.xcarchive \
             -exportOptionsPlist exportOptions.plist \
-            -exportPath $PWD/build \
+            -exportPath DerivedData/IPA \
             -allowProvisioningUpdates \
             -exportArchive | xcpretty
            
