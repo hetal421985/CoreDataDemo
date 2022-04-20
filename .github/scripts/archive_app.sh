@@ -5,6 +5,5 @@ set -eo pipefail
 xcodebuild -project Demo.xcodeproj \
             -scheme Demo \
             -sdk iphoneos \
-            -configuration AppStoreDistribution \
-            -archivePath $PWD/build/Demo.xcarchive \
+            -archivePath  DerivedData/Archive/Demo.xcarchive \
             clean archive | xcpretty
